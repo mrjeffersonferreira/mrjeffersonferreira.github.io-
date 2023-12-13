@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Classic Books Survey Form</title>
+    </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Classic Books Survey Form</h1>
+        <p id="description" class="description text-center">Thank you for taking the time to help us choose the best classic books of all time.</p>
+      </header>
+    <form id="survey-form">
+    <div class="form-group">
+     <label for="name" id="name-label"> Nome: </label>
+        <input 
+        type="text" 
+        id="name" 
+        name="name" 
+        required 
+        placeholder="Enter Your Name"
+        class="form-control"/>
+    </div>
+
+    <div class="form-group">
+      <label for="email" id="email-label"> E-mail: </label>
+        <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        required 
+        placeholder="Enter Your Email:"
+        class="form-control" />
+    </div>
+
+    <div class="form-group">
+      <label for="number" id="number-label"> Age: <span class="clue"> (optional) </span></label>
+        <input 
+        type="number" 
+        id="number" 
+        name="age" 
+        required min="10" max="99"   
+        placeholder="Age"
+        class="form-control" />
+    </div>    
+
+    <div class="form-group">
+      <p> Which option best describes your current role?: </p>
+       <select id="dropdown" name="role" required class="form-control">
+         <option disabled selected value> Select current role </option>
+        <option value="Student"> Student </option>
+        <option value="Full Time Job"> Full Time Job </option>
+        <option value="learner"> Full Time Learner </option>
+        <option value="Prefer not to say"> Prefer not to say </option>
+        <option value="other"> Other </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p> Would you recommend ClassicBooks to a friend? </p>
+      <label>
+        <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            /> Definitely </label>
+      <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            /> Maybe </label>
+      <label>
+            <input
+              name="user-recommend"
+              value="Not sure"
+              type="radio"
+              class="input-radio"
+            /> Not sure </label>
+     </div>
+
+     <div class="form-group">
+      <p> Which country do you think produced the best literary classics? </p>
+      <select id="most-like" name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="Germany">Germany</option>
+        <option value="Italy">Italy</option>
+        <option value="France">France</option>
+        <option value="United States">United States</option>
+        <option value="Brazil">Brazil</option>
+        <option value="England">England</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Spain">Spain</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Russia">Russia</option>
+        <option value="Greece">Greece</option>
+        <option value="Other">Other</option>
+      </select>  
+    </div>
+
+    <div class="form-group">
+      <p> Choose your favorite books <span class="clue">(Check out the best) </span></p>
+
+       <label
+            ><input
+              name="prefer"
+              value="Demons by Fyodor Dostoyevsky"
+              type="checkbox"
+              class="input-checkbox"
+            /> Demons, by Fyodor Dostoyevsky </label>
+      <label>
+            <input
+              name="prefer"
+              value="Madame Bovary by Gustave Flaubert"
+              type="checkbox"
+              class="input-checkbox"
+            /> Madame Bovary, by Gustave Flaubert </label>
+      <label
+            ><input
+              name="prefer"
+              value="War and Peace, by Lev Tolstoy"
+              type="checkbox"
+              class="input-checkbox"
+            /> War and Peace, by Lev Tolstoy </label>
+     <label
+            ><input
+              name="prefer"
+              value="Dom Casmurro, by Machado de Assis"
+              type="checkbox"
+              class="input-checkbox"
+            /> Dom Casmurro, by Machado de Assis </label>
+    <label
+            ><input
+              name="prefer"
+              value="Divina Commedia, by Dante Alighieri"
+              type="checkbox"
+              class="input-checkbox"
+            /> Divina Commedia, by Dante Alighieri </label>
+     <label
+            ><input
+              name="prefer"
+              value="Hamlet, by William Shakespeare"
+              type="checkbox"
+              class="input-checkbox"
+            /> Hamlet, by William Shakespeare </label>
+    <label
+            ><input
+              name="prefer"
+              value="La rebelión de las masas, by José Ortega y Gasset"
+              type="checkbox"
+              class="input-checkbox"
+            /> La rebelión de las masas, by José Ortega y Gasset </label>
+     <label
+            ><input
+              name="prefer"
+              value="The Republic, by Plato"
+              type="checkbox"
+              class="input-checkbox"
+            /> The Republic, by Plato </label>       
+     <label
+            ><input
+              name="prefer"
+              value="Bible"
+              type="checkbox"
+              class="input-checkbox"
+            /> The Bible </label>
+       <label
+            ><input
+              name="prefer"
+              value="Don quijote de la mancha, Miguel de Cervantes"
+              type="checkbox"
+              class="input-checkbox"
+            /> Don quijote de la mancha, by Miguel de Cervantes</label>
+       <label
+            ><input
+              name="prefer"
+              value="The Autobiography of Benjamin Franklin by Benjamin Franklin"
+              type="checkbox"
+              class="input-checkbox"
+            /> The Autobiography of Benjamin Franklin, by Benjamin Franklin </label>          
+   </div>
+      
+   <div class="form-group">
+   <p>Any comments or suggestions?</p>           
+   <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>    
+
+   <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>      
+    </body>
+</html>
